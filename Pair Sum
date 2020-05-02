@@ -1,0 +1,28 @@
+
+import java.util.*;
+*/
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+import java.util.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+
+        // Write your code here
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        int a[] = new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        int k=sc.nextInt();
+         for(int i=0;i<n;i++){
+             if(a[i]+a[i+1]==k){
+                 
+                 System.out.println("YES");
+             }
+            i++; 
+         }
+         System.out.println("NO");
+
+    }
+}
